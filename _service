@@ -1,0 +1,15 @@
+<services>
+  <service name="tar_scm">
+    <param name="url">git://github.com/fusiondirectory/fusiondirectory.git</param>
+    <param name="scm">git</param>
+	<param name="versionprefix">master</param>
+	<param name="filename">fusiondirectory</param>
+    <param name="revision">1.0.7</param>
+  </service>
+  
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">bz2</param>
+  </service>
+  <service name="set_version"/>
+</services>
